@@ -1,0 +1,382 @@
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*Correct `block` display not defined in IE 8/9.*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block;}
+
+/*Correct `inline-block` display not defined in IE 8/9.*/
+audio,canvas,video {display: inline-block;}
+
+/*Prevent modern browsers from displaying `audio` without controls.* Remove excess height in iOS 5 devices.*/
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/* Address styling not present in IE 8/9.*/
+[hidden] {display: none;}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom.*/
+html {
+  color: #222;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 12px;
+}
+
+/*Remove default margin.*/
+body { margin: 16px 58px;}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*Address `outline` inconsistency between Chrome and other browsers.*/
+a:focus {outline: thin dotted;}
+
+/*Improve readability when focused and also mouse hovered in all browsers.*/
+a:active, a:hover {outline: 0;}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.*/
+b,strong {font-weight: bold;}
+
+/* Address differences between Firefox and other browsers.*/
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+/*Set consistent quote types.*/
+q {quotes: "\201C" "\201D" "\2018" "\2019";}
+
+/* Address inconsistent and variable font size in all browsers.*/
+small {font-size: 80%;}
+
+/* Prevent `sub` and `sup` affecting `line-height` in all browsers.*/
+sub, sup {
+  color: #999;
+  font-size: 50%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {top: -.65em;}
+sub {bottom: -0.25em;}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/* Remove border when inside `a` element in IE 8/9.*/
+img {border: 0;}
+
+/* Correct overflow displayed oddly in IE 9.*/
+svg:not(:root) {overflow: hidden;}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/* Address margin not present in IE 8/9 and Safari 5.*/
+figure {margin: 0;}
+
+/* ==========================================================================
+   General Content
+   ========================================================================== */
+
+#salutation {
+  color: #999;
+  float: left;
+}
+#menu {
+  display: inline-block;
+  float: right;
+  margin-top: 11px;
+}
+a {
+  color: #369;
+  margin-left: 19px;
+  text-decoration: none;
+}
+#signIn {
+  color: #18AFE0;
+}
+#logo37 {
+  clear: both;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+#wrap, #wrapUl{
+  margin: auto;
+  width: 960px;
+}
+h1, h2, h6, .presentation, ol h3, cite, ul h4 {
+  font-family: 'Crimson Text', "Times New Roman", Times,  serif;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  font-size: 59px;
+  font-weight: 500;
+  line-height: 1em;
+  margin-top: -1px;
+}
+h2 {
+  font-size:49px;
+  font-weight: 500;
+  width: 95%;
+}
+.boxes h3, .noBoxes h3 {
+  font-size: 21px;
+  margin: 0 auto;
+}
+.noBoxes:hover {
+  color: #369;
+}
+ol h3 {
+  color: #CCC;
+  font-size: 58px;
+  font-weight: 500;
+  float: left;
+  line-height: normal;
+  margin: -22px 15px 0 0;
+  padding-left: 5px;
+  width: 25px;
+}
+ul h3 {
+  border-bottom: 1px solid #ddd;
+  color: #C00;
+  font-size: 14px;
+  margin: auto;
+}
+footer h3 {
+  color: #C00;
+  font-size: 14px;
+  margin-left: 10px;
+  text-align: center;
+}
+h4 {
+  color: #C00;
+  font-size: 16px;
+}
+.boxes h4, .noBoxes h4{
+  color: #C00;
+  font-size: 14px;
+}
+ol h4 {
+  margin-bottom: -8px;
+}
+h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px auto;
+}
+.boxes p, .noBoxes p{
+  font-size: 14px;
+}
+.noBoxes p, ul p {
+  color: #666;
+  font-size: 12px;
+}
+aside {
+  text-align: center;
+}
+.boxes {
+  background: #ffffff; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZmVmZWYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+  background:    -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6+ */
+  background:     -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* IE10+ */
+  background:      -o-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Opera 11.10+ */
+  background:         linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); /* IE6-8 */
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #efefef;
+     -moz-box-shadow: 0 0 5px #efefef;
+      -ms-box-shadow: 0 0 5px #efefef;
+       -o-box-shadow: 0 0 5px #efefef;
+         -box-shadow: 0 0 5px #efefef;
+  display: inline-block;
+  height: 235px;
+  margin: auto 18px;
+  padding: 10px;
+  width: 170px;
+}
+.noBoxes {
+  display: inline-block;
+  height: 235px;
+  margin: auto 18px;
+  padding: 10px;
+  width: 170px;
+}
+.boxes img, .noBoxes img {
+  display: inline-block;
+  padding: 10px;
+}
+span {
+  color: #369;
+  padding-left: 10px;
+  text-decoration: underline;
+}
+Sub {
+  float: left;
+}
+.hr {
+  display: block;
+  margin: 45px auto;
+}
+#hrFloated {
+  clear: left;
+}
+.presentation {
+  color: #666;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-left: 20px;
+  padding: 20px 0 20px 0;
+  text-align: left;
+  width: 70%;
+}
+#arrow-customer {
+  position: absolute;
+  left: 225px;
+  top: 848px;
+}
+.customer {
+  position: absolute;
+  left: 110px;
+  top: 775px;
+}
+#meet {
+  padding-top: 105px;
+}
+#meet:hover {
+  color: #18AFE0;
+  text-decoration: underline;
+}
+#worldBadge {
+  position: absolute;
+  right: 260px;
+  top: 918px;
+}
+#companies {
+  margin: 18px auto 0 35px;
+  text-align: center;
+}
+ol {
+  float:left;
+  margin: 10px auto 37px auto;
+  width: 44%;
+}
+ol li, ul li {
+  list-style-type: none;
+}
+em {
+  font-style: italic;
+}
+#arrow-rework {
+  float:right;
+  margin-top: -50px;
+  margin-right: 20px;
+}
+#crumple {
+  float: right;
+  margin-top: -115px;
+  margin-right: -100px;
+}
+#figurecaption {
+  float: right;
+  margin-top: 25px;
+  margin-right: -100px;
+}
+#book {
+  clear:right;
+  display: inline-block;
+  padding-top: 20px;
+}
+cite {
+  color: #888;
+  font-size: 22px;
+  font-weight: normal;
+  float: right;
+  margin-top: 40px;
+  width: 61%;
+}
+cite small {
+  color: #222;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif; /* 1 */
+  font-size: 12px;
+  font-style: normal;
+}
+#wrapUl{
+  width: 90%;
+}
+#wrapCol1, #wrapCol2 {
+  float:left;
+  width: 45%;
+}
+ul p {
+  padding-bottom: 20px;
+}
+ul a {
+  color: #222;
+  font-size: 22px;
+}
+ul a:hover {
+  color: #369;
+}
+#uppercase {
+  text-transform: uppercase;
+}
+#footer a {
+  display: block;
+  line-height: 3em;
+  text-align: center;
+}
+footer aside {
+  margin: 55px auto 85px auto;
+}
+footer span {
+  color: #999;
+  text-decoration: none;
+}
+footer a {
+  margin-left : 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
