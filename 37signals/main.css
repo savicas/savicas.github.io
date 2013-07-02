@@ -245,14 +245,14 @@ Sub {
   width: 70%;
 }
 #arrow-customer {
-  position: absolute;
-  left: 225px;
-  top: 848px;
+  float: left;
+  margin-left: 50px;
+  margin-top: -60px;
 }
 .customer {
-  position: absolute;
-  left: 110px;
-  top: 775px;
+	float: left;
+  margin-left: -40px;
+  margin-top: -135px;
 }
 #meet {
   padding-top: 105px;
@@ -262,9 +262,9 @@ Sub {
   text-decoration: underline;
 }
 #worldBadge {
-  position: absolute;
-  right: 260px;
-  top: 918px;
+  float: right;
+	margin-right: 65px;
+  margin-top: -240px;
 }
 #companies {
   margin: 18px auto 0 35px;
