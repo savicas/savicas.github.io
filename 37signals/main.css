@@ -182,6 +182,7 @@ h6 {
   font-size: 12px;
 }
 aside {
+  padding-top: 15px;
   text-align: center;
 }
 .boxes {
@@ -350,7 +351,37 @@ footer span {
 footer a {
   margin-left : 5px;
 }
-
+/* ==========================================================================
+   Basecamp, Highrise and Campfire HOVERs
+========================================================================== */
+#arrow-basecamp, #arrow-highrise, #arrow-campfire {
+  position: absolute;
+  top: 305px;
+  left: 473px;
+}
+#arrow-highrise {
+  left: 705px;
+}
+#arrow-campfire {
+  top: 302px;
+  left: 785px;
+}
+#basecamp, #highrise, #campfire {
+  font-size: 4rem;
+}
+#highrise {
+  width: 85%;
+}
+#basecamp a, #highrise a, #campfire a {
+  text-decoration: underline;
+}
+#basecampH6, #highriseH6, #campfireH6 {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.33rem;
+  font-weight: normal;
+  line-height: 1.5;
+  width: 82%;
+}
 
 
 
