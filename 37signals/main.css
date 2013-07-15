@@ -382,8 +382,9 @@ footer a {
   line-height: 1.5;
   width: 82%;
 }
-
-
+.hidden{
+  display: none;
+}
 
 
 
