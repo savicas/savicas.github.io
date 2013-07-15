@@ -127,7 +127,7 @@ h1 {
 h2 {
   font-size:49px;
   font-weight: 500;
-  width: 95%;
+  width: 100%;
 }
 .boxes h3, .noBoxes h3 {
   font-size: 21px;
@@ -205,7 +205,7 @@ aside {
          -box-shadow: 0 0 5px #efefef;
   display: inline-block;
   height: 235px;
-  margin: auto 18px;
+  margin: auto 18px auto auto;
   padding: 10px;
   width: 170px;
 }
@@ -240,23 +240,29 @@ Sub {
   font-size: 22px;
   font-weight: 400;
   line-height: 1.3em;
-  margin-left: 20px;
-  padding: 20px 0 20px 0;
+  margin-left: 25px;
+  padding: 25px;
   text-align: left;
-  width: 70%;
+  width: 65%;
+}
+#indented {
+  line-height: 1;
+  width: 85%;
 }
 #arrow-customer {
   float: left;
-  margin-left: 50px;
-  margin-top: -60px;
+  margin-left: 55px;
+  margin-top: -41px;
 }
 .customer {
 	float: left;
-  margin-left: -40px;
-  margin-top: -135px;
+  margin-left: -70px;
+  margin-top: -100px;
 }
 #meet {
-  padding-top: 105px;
+  margin-top: 0px;
+  margin-left: -125px;
+  margin-bottom: 10px;
 }
 #meet:hover {
   color: #18AFE0;
@@ -356,15 +362,14 @@ footer a {
 ========================================================================== */
 #arrow-basecamp, #arrow-highrise, #arrow-campfire {
   position: absolute;
-  top: 305px;
-  left: 473px;
+  top: 308px;
+  left: 485px;
 }
 #arrow-highrise {
-  left: 705px;
+  left: 700px;
 }
 #arrow-campfire {
-  top: 302px;
-  left: 785px;
+ left: 755px;
 }
 #basecamp, #highrise, #campfire {
   font-size: 4rem;
@@ -380,6 +385,7 @@ footer a {
   font-size: 1.33rem;
   font-weight: normal;
   line-height: 1.5;
+  margin-top: 31px;
   width: 82%;
 }
 .hidden{
