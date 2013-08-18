@@ -40,12 +40,18 @@ $(document).ready(function(){
 		}
 	});
 
-	$("#replay").on("click", function() {
+	$("#replay").on("click", function(e) {
+		e.preventDefault();
+		e.stopPropagation();
 		secretNum = newSecretNumber();
 		$(".hide").css({"visibility" : "hidden"});
 		$("#input").val("");
-
-
+	});
+	$("#answer").on("click", function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		$(".hide").css({"visibility" : "hidden"});
+		$("#result").css({"visibility": "visible"}).find("p").text("Ooooh the winner number was " + secretNum +" .");
 	});
 });
 
