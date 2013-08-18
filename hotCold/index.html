@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Hot & Cold Game</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Author" content="Sandra Vilaro" />
+  <meta name="Description" content="Hot & Cold Game" />
+  <meta name="keywords" content="Hot & Cold Game" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="screen.css" type="text/css" media="screen"charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico" >
+	<link href='http://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' type='text/css'>
+
+  <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+  <h1>Hot and <span>Cold Game</span></h1>
+  <h3>Can you guess a number between 0 and 50?</h3>
+  <section>
+  	<img id="hot" src="img/hotTemp.png" width="83" height="240">
+  	<aside id="gettingHot" class="hide" class="show">                   <!--Getting Hot Aside-->
+			<p id="gettingHotHover">Booooom! its getting hot, here... try again.</p>
+		</aside>
+  	<aside id="gettingCold" class="hide">                  <!--Getting Cold Aside-->
+			<p id="gettingColdHover">Woooooops! its getting cold, here... try again.</p>
+		</aside>
+  	<aside id="congrats" class="hide" class="show">                     <!--Congrats Aside-->
+			<p id="congratsHover">BooYaaa!  you guessed it! Congratulations.</p>
+		</aside>
+    <img id="cold" src="img/coldTemp.png" width="88" height="240">
+  <!-- </section> -->
+	<form id="form1">
+		<input type="number" id="input" name="input"  placeholder="Your number">
+		<input type="submit" id="submit" value="Submit">
+  </form>
+  <form id="form2">
+    <input type="submit" id="replay" value="Replay"></br>
+    <input type="submit" id="answer" value="Answer">
+  </form>
+</section>
+</body>
+</html>
