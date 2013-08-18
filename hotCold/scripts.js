@@ -6,9 +6,7 @@ $(document).ready(function(){
 	$("#submit").on("click", function(e){
 		e.preventDefault();
 		e.stopPropagation();
-		console.log(secretNum);
 		var num = parseInt($("#input").val());
-		console.log(num);
 		if((! $.isNumeric(num)) || (num < 0) || (num > 50)) {
 			alert("It has to be a number, between 0 and 50. Please, try again.");
 			$("#input").val("");
@@ -39,7 +37,6 @@ $(document).ready(function(){
 			}
 		}
 	});
-
 	$("#replay").on("click", function(e) {
 		e.preventDefault();
 		e.stopPropagation();
