@@ -1,5 +1,8 @@
 $(document).ready(function(){
-	var secretNum = Math.floor(Math.random()*50);
+	var secretNum = newSecretNumber();
+	function newSecretNumber(){
+		return Math.floor(Math.random()*50);
+	}
 	$("#submit").on("click", function(e){
 		e.preventDefault();
 		e.stopPropagation();
@@ -35,6 +38,14 @@ $(document).ready(function(){
 				$("#congrats").css({"visibility": "visible"});
 			}
 		}
+	});
+
+	$("#replay").on("click", function() {
+		secretNum = newSecretNumber();
+		$(".hide").css({"visibility" : "hidden"});
+		$("#input").val("");
+
+
 	});
 });
 
