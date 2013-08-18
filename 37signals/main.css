@@ -133,7 +133,7 @@ h2 {
 }
 .boxes h3, .noBoxes h3 {
   font-size: 21px;
-  margin: 0 auto;
+  margin: 0;
 }
 .noBoxes:hover {
   color: #369;
@@ -183,6 +183,17 @@ h6 {
   color: #666;
   font-size: 12px;
 }
+
+sup, h3,h4 {border: 1px solid blue;}
+
+
+
+
+
+
+
+
+
 aside {
   padding-top: 15px;
   text-align: center;
@@ -206,7 +217,7 @@ aside {
        -o-box-shadow: 0 0 5px #efefef;
          -box-shadow: 0 0 5px #efefef;
   display: inline-block;
-  height: 235px;
+  height: 236px;
   margin: auto 18px auto auto;
   padding: 10px;
   width: 170px;
@@ -339,7 +350,7 @@ ul a {
   font-size: 22px;
 }
 ul a:hover {
-  color: #369;
+  color: #369;ƒ
 }
 #uppercase {
   text-transform: uppercase;
@@ -388,12 +399,13 @@ footer a {
   font-size: 1.33rem;
   font-weight: normal;
   line-height: 1.5;
-  margin-top: 31px;
+  margin-top: 32px;
   width: 82%;
 }
 .hidden {
   display: none;
 }
+
 
 
 
