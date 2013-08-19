@@ -48,7 +48,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		e.stopPropagation();
 		$(".hide").css({"visibility" : "hidden"});
-		$("#result").css({"visibility": "visible"}).find("p").text("Ooooh the winner number was " + secretNum +" .");
+		$("#result").css({"visibility": "visible"}).find("p").text("The winner number was " + secretNum +".");
 	});
 });
 

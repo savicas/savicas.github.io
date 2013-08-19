@@ -244,6 +244,10 @@ section {
 }
 #congrats {
   color: #ffd700;
+  text-shadow: 1px -1px 2px #4e4200;
+}
+#result {
+  color: #4ba130;
 }
 /*==================================
             Placeholder
