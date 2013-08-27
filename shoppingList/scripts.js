@@ -9,13 +9,29 @@ $(document).ready(function(){
 		e.preventDefault();
 		e.stopPropagation();
 
-		var newItem = '<input type="checkbox">' + '<span>' + getItem() + '</span>' + '<input type="reset" value="Delete">' + '<br/>';
-		console.log(newItem);
-		$(newItem).appendTo("div");
+		if (getItem() === '') {
+			alert("You need to write something to create the element list");
+			$('#item').focus();
 
-		$("#item").val('');
-		$('#item').focus();
+		} else {
+			var newItem = '<input type="checkbox">' + '<span>' + getItem() + '</span>' + '<input type="reset" value="Delete">' + '<br/>';
+			$(newItem).appendTo("div");
+
+			$("#item").val('');
+			$('#item').focus();
+		}
+
 	});
 
 });
+
+
+
+
+
+
+
+
+
+
 

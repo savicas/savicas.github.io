@@ -167,7 +167,7 @@ input[type="checkbox"], input[type="reset"] {
   margin: .5em;
 }
 div {
-  text-align: center;
+  margin-left: 2em;
 }
 input[type="submit"], input[type="reset"] {
   background: rgb(238,238,238); /* Old browsers */
