@@ -21,25 +21,18 @@ audio:not([controls]) { display: none; height: 0;}
 /* 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling user zoom.*/
 html, input {
-  color: #710073;
+  color: #680068;
   font-family: arial, sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  min-height: 100%;
 }
 
 /* Remove default margin.*/
-body {
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZWJkMWZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-radial-gradient(center, ellipse cover,  rgba(125,185,232,0) 0%, rgba(235,209,252,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(125,185,232,0)), color-stop(100%,rgba(235,209,252,1))); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,185,232,0) 0%,rgba(235,209,252,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  rgba(125,185,232,0) 0%,rgba(235,209,252,1) 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  rgba(125,185,232,0) 0%,rgba(235,209,252,1) 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  rgba(125,185,232,0) 0%,rgba(235,209,252,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#ebd1fc',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-  margin: auto;
-  width: 480px;}
+body{
+  background-image: url(./cork.png);
+  padding-top: 5em;
+}
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -51,7 +44,7 @@ a:active, a:hover { outline: 0;}
    Typography
    ========================================================================== */
 /* Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari 5, and Chrome.*/
-h1 { font-size: 2em; margin: 1em;}
+h1 { font-size: 2em;}
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome.*/
 abbr[title] { border-bottom: 1px dotted;}
@@ -156,18 +149,41 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ==========================================================================
   General Content
    ========================================================================== */
+section {
+background-color:#E1F2CE;
+background-color: rgba(225, 242, 206, .7);
+  -webkit-border-radius: 7px;
+     -moz-border-radius: 7px;
+          border-radius: 7px;
+  margin: auto;
+  width: 480px;
+}
+img {
+  position: absolute;
+  top: 8.5em;
+  left: 21.8em;
+  -webkit-transform: rotate(-8.5deg);  /* Safari 3.1+, Chrome */
+     -moz-transform: rotate(-8.5deg);  /* Firefox 3.5-15 */
+      -ms-transform: rotate(-8.5deg);  /* IE9+ */
+       -o-transform: rotate(-8.5deg);  /* Opera 10.5-12.00 */
+          transform: rotate(-8.5deg);  /* Firefox 16+, Opera 12.50+ */
+}
 h1 {
+  color:#2868a4;
+  padding: 2em 1.3em 0 0 ;
+  text-align: right;
+}
+form {
+  padding: 1em;
   text-align: center;
 }
-form, div {
-  margin: 1em;
-  padding: .5em;
+li {
+  list-style-type: none;
+  text-align: left;
 }
 input[type="checkbox"], input[type="reset"] {
-  margin: .5em;
-}
-div {
-  margin-left: 2em;
+  font-size: .8rem;
+  margin: .8em;
 }
 input[type="submit"], input[type="reset"] {
   background: rgb(238,238,238); /* Old browsers */
@@ -184,9 +200,6 @@ input[type="submit"], input[type="reset"] {
      -moz-border-radius: 5px;
           border-radius: 5px;
           font-weight: bold;
-}
-li {
-  list-style-type: none;
 }
 .lineThrough {
   text-decoration: line-through;
