@@ -180,6 +180,7 @@ form {
 li {
   list-style-type: none;
   text-align: left;
+  word-wrap:break-word;
 }
 input[type="checkbox"], input[type="reset"] {
   font-size: .8rem;
