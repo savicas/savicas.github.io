@@ -14,7 +14,7 @@ $(document).ready(function(){
 			$('#item').focus();
 
 		} else {
-			var newItem = '<li><input type="checkbox" class="checkbox"><span>' + getItem() + '</span><input type="reset" value="Delete"></li>';
+			var newItem = '<li><input type="checkbox" class="checkbox"><span>' + getItem() + '</span><input type="reset" value="Delete" class="delete"></li>';
 			$(newItem).appendTo("#itemList");
 
 			$("#item").val('');
@@ -24,6 +24,10 @@ $(document).ready(function(){
 
 	$("#itemList").on("click", ".checkbox", function(){
 		$(this).siblings('span').toggleClass('lineThrough').show();
+	});
+
+	$("#itemList").on("click", ".delete", function() {
+		$(this).closest('li').remove();
 	});
 
 });
