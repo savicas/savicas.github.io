@@ -14,17 +14,19 @@ $(document).ready(function(){
 			$('#item').focus();
 
 		} else {
-			var newItem = '<input type="checkbox">' + '<span>' + getItem() + '</span>' + '<input type="reset" value="Delete">' + '<br/>';
-			$(newItem).appendTo("div");
+			var newItem = '<li><input type="checkbox" class="checkbox"><span>' + getItem() + '</span><input type="reset" value="Delete"></li>';
+			$(newItem).appendTo("#itemList");
 
 			$("#item").val('');
 			$('#item').focus();
 		}
+	});
 
+	$("#itemList").on("click", ".checkbox", function(){
+		$(this).siblings('span').toggleClass('lineThrough').show();
 	});
 
 });
-
 
 
 
