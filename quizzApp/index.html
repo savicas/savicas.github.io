@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>General Culture</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Author" content="Sandra Vilaro" />
+  <meta name="Description" content="General Culture" />
+  <meta name="keywords" content="General Culture" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="screen.css" type="text/css" media="screen"charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One|Rosario' rel='stylesheet' type='text/css'>
+  <script src="./jquery-2.0.3.min.js"></script>
+  <script src="./scripts.js"></script>
+  <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <h1>Quizz about Cities and countries</h1>
+  <h2>How do you know about cities? Every answer gives you 2 points.</h2>
+  <section id="score">
+  	<h3 id="currentQuestion">Question <span id="actualQuestion">1</span> of 5</h3>
+  	<h3>Current score: <span id="currentScore">0</span></h3>
+  </section>
+
+  <div data-template="question" class="hidden">
+    <section data-question-number="$numberOfQuestion">
+    	<p>$question<span class="correctIcon">✓</span><span class="incorrectIcon">✗</span></p>
+      <form>
+          <fieldset>
+              <label class="radio"><input type="radio" name="check">$choice0</label>
+              <label class="radio"><input type="radio" name="check">$choice1</label>
+              <label class="radio"><input type="radio" name="check">$choice2</label>
+              <label class="radio"><input type="radio" name="check">$choice3</label>
+          </fieldset>
+      </form>
+      <button class="submit">Submit</button>
+    </section>
+  </div>
+
+  <div class="questions">
+  </div>
+
+  <h1 id="totalScore" class="hidden">Total score: <span class="totalScoreNumber">10</span> points.</h1>
+
+</body>
+</html>
