@@ -1,0 +1,229 @@
+@import url(http://fonts.googleapis.com/css?family=Rochester|Playfair+Display|Bree+Serif);
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/* Correct `block` display not defined in IE 8/9.*/
+article,aside, details, figcaption,figure, footer, header, hgroup, main, nav section, summary { display: block;}
+
+/* Correct `inline-block` display not defined in IE 8/9.*/
+audio, canvas, video {display: inline-block;}
+
+/* Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.*/
+audio:not([controls]) { display: none; height: 0;}
+/*Ad
+dress styling not present in IE 8/9.*/
+[hidden] {display: none;}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/* Address `outline` inconsistency between Chrome and other browsers.*/
+a:focus { outline: thin dotted;}
+/* Improve readability when focused and also mouse hovered in all browsers.*/
+a:active, a:hover { outline: 0;}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b, strong { font-weight: bold;}
+
+/*Address differences between Firefox and other browsers.*/
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0;}
+
+/* Address inconsistent and variable font size in all browsers.*/
+small { font-size: 80%; }
+
+/* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;}
+sup { top: -0.5em;}
+sub { bottom: -0.25em;}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/* Remove border when inside `a` element in IE 8/9.*/
+img { border: 0;}
+
+/* Correct overflow displayed oddly in IE 9.*/
+svg:not(:root) { overflow: hidden;}
+
+/* ==========================================================================
+  General Content Mobile First and tablet
+   ========================================================================== */
+html {
+  color: #aea08d;
+  font-family: 'Rochester', cursive , arial, sans-serif; /* 1 */
+  font-size: 1.05em;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  text-shadow: 1px 2px 1px #4a443c;
+}
+body {
+  background-color: #fad5d1;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+h1 {
+  font-size: 2.3rem;
+}
+h1 span {
+  font-size: 1.3rem;
+  text-shadow: none;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: .5em;
+  text-align: center;
+}
+section {
+  background-color: #d9c7b0;
+}
+.googleHP {
+  background-image: url(img/googleHP.png);
+}
+.signals {
+  background-image: url(img/37signals.png);
+}
+.hotCold {
+  background-image: url(img/hotColdApp.png);
+}
+.shoppingList {
+  background-image: url(img/shoppingList.png);
+}
+.quizzApp {
+  background-image: url(img/quizzApp.png);
+}
+.apiProject {
+  background-image: url(img/quizzApp.png);
+}
+section a {
+  webkit-border-radius: 50%;
+         border-radius: 50%;
+  display: inline-block;
+  height: 283px;
+  margin: .5em 1em;
+  padding: .5em auto;
+  width:283px;
+}
+footer {
+  text-align: center;
+  margin-top: 1em;
+}
+footer a {
+  margin: .4em;
+  text-decoration: none;
+}
+footer a:hover, footer a:active {
+  color: #c4a29e;
+  text-shadow: 1px 2px 2px #322e3d;
+}
+p a:hover {
+  color: #c4a29e;
+}
+.icon-gittip  {
+  font-size: 2rem;
+}
+#hireMe {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.6rem;
+}
+p {
+  text-shadow: none;
+}
+p a {
+  color:#727267;
+  text-decoration: none;
+}
+h2, footer {
+  background-color:#d9c7b0;
+  border: 3px double #d8b3ae;
+  color: #85857a;
+  display: block;
+}
+h2, footer a{
+  color: #85857a;
+}
+/* ==========================================================================
+  General Content Desktop
+   ========================================================================== */
+  @media only screen and (min-width: 961px){
+    html {
+      text-shadow: 1px 2px 1px #4a443c;
+    }
+    body {
+      width: 960px;
+    }
+    h1 {
+      font-size: 3rem;
+      line-height: .8em;
+      margin: 0.5em 0;
+      text-align: left;
+    }
+    h2 {
+      font-size: 3.5rem;
+    }
+    .icon-gittip  {
+      font-size: 2.2rem;
+      padding: 0 1em 2em 1em;
+    }
+    section {
+     webkit-border-radius: 1% 25%;
+            border-radius: 1% 25%;
+    }
+    section a {
+      display: inline-block;
+      height: 283px;
+      margin: 2em 1em;
+      width:283px;
+    }
+    footer {
+      margin-top: 1.8em;
+    }
+    footer a {
+      padding: .5em;
+    }
+    p {
+      margin-top: 1.4em;
+      text-align: right;
+      text-shadow: none;
+    }
+    p a {
+      font-size: 1.2rem;
+    }
+    h1 span, #hireMe {
+      font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
