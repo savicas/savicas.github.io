@@ -52,15 +52,15 @@ svg:not(:root) { overflow: hidden;}
   General Content Mobile First and tablet
    ========================================================================== */
 html {
-  color: #aea08d;
+  color: #993299;
   font-family: 'Rochester', cursive , arial, sans-serif; /* 1 */
   font-size: 1.05em;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  text-shadow: 1px 2px 1px #4a443c;
+  text-shadow: 1px 2px 1px #330033;
 }
 body {
-  background-color: #fad5d1;
+  background-color:#e5cce5;
   margin: auto;
   text-align: center;
   width: 90%;
@@ -79,35 +79,52 @@ h2 {
   text-align: center;
 }
 section {
-  background-color: #d9c7b0;
+  background-color:#f2e5f2;  border: 3px double #cc99cc;
 }
-.googleHP {
-  background-image: url(img/googleHP.png);
-}
-.signals {
-  background-image: url(img/37signals.png);
-}
-.hotCold {
-  background-image: url(img/hotColdApp.png);
-}
-.shoppingList {
-  background-image: url(img/shoppingList.png);
-}
-.quizzApp {
-  background-image: url(img/quizzApp.png);
-}
-.apiProject {
-  background-image: url(img/quizzApp.png);
-}
-section a {
+section img, .projectCurtain {
   webkit-border-radius: 50%;
          border-radius: 50%;
   display: inline-block;
-  height: 283px;
-  margin: .5em 1em;
-  padding: .5em auto;
-  width:283px;
 }
+section img {
+  padding: 2em .5em;
+}
+.projectCurtain {
+  background-color: #581e59;
+  background-color: rgba(89,31,89, .9);
+  color: #f2e5f2;
+  font-family: 'Playfair Display', serif;
+  font-size: .8rem;
+  height: 283px;
+  opacity: 1;
+  position:absolute;
+  top: 20.8em;
+  left: 3em;
+  width: 283px;
+  z-index:1;
+ }
+.projectCurtain p {
+  height: 50px;
+  position: relative;
+  top: 4.5em;
+  left: 4em;
+  text-align: left;
+  width: 245px;
+ }
+ .projectCurtain a {
+  font-size: 1em;
+  width: 116px;
+ }
+.projectCurtain ul {
+  margin-top: 5em;
+  height: 100px;
+  width: 245px;
+ }
+.projectCurtain li {
+  list-style-type: none;
+  margin-left: 6em;
+  text-align: left;
+ }
 footer {
   text-align: center;
   margin-top: 1em;
@@ -117,11 +134,11 @@ footer a {
   text-decoration: none;
 }
 footer a:hover, footer a:active {
-  color: #c4a29e;
-  text-shadow: 1px 2px 2px #322e3d;
+  color: #bf7fbf;
+  text-shadow: 1px 2px 2px #330033;
 }
 p a:hover {
-  color: #c4a29e;
+  color: #330033;
 }
 .icon-gittip  {
   font-size: 2rem;
@@ -134,25 +151,21 @@ p {
   text-shadow: none;
 }
 p a {
-  color:#727267;
+  color: #bf7fbf;
   text-decoration: none;
 }
 h2, footer {
-  background-color:#d9c7b0;
-  border: 3px double #d8b3ae;
-  color: #85857a;
+  background-color: #f2e5f2;
+  border: 3px double #cc99cc;
   display: block;
 }
 h2, footer a{
-  color: #85857a;
+  color: #a64ca6;
 }
 /* ==========================================================================
   General Content Desktop
    ========================================================================== */
   @media only screen and (min-width: 961px){
-    html {
-      text-shadow: 1px 2px 1px #4a443c;
-    }
     body {
       width: 960px;
     }
@@ -170,17 +183,11 @@ h2, footer a{
       padding: 0 1em 2em 1em;
     }
     section {
-     webkit-border-radius: 1% 25%;
-            border-radius: 1% 25%;
-    }
-    section a {
-      display: inline-block;
-      height: 283px;
-      margin: 2em 1em;
-      width:283px;
+     webkit-border-radius: 25% 1%;
+            border-radius: 25% 1%;
     }
     footer {
-      margin-top: 1.8em;
+      margin-top: em;
     }
     footer a {
       padding: .5em;
@@ -196,6 +203,10 @@ h2, footer a{
     h1 span, #hireMe {
       font-size: 1.6rem;
     }
+/*    .projectCurtain {
+      top: 23.3em;
+      left: 10.3em;
+    }*/
 }
 
 
