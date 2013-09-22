@@ -81,46 +81,48 @@ h2 {
 section {
   background-color:#f2e5f2;  border: 3px double #cc99cc;
 }
-section img, .projectCurtain {
-  webkit-border-radius: 50%;
-         border-radius: 50%;
+.project {
   display: inline-block;
 }
-section img {
-  padding: 2em .5em;
+.project img, .project .curtain {
+  webkit-border-radius: 50%;
+         border-radius: 50%;
 }
-.projectCurtain {
+section img {
+  margin: 2em .5em;
+}
+.curtain {
+  position: absolute;
+  height: 283px;
   background-color: #581e59;
   background-color: rgba(89,31,89, .9);
   color: #f2e5f2;
   font-family: 'Playfair Display', serif;
   font-size: .8rem;
-  height: 283px;
-  opacity: 1;
-  position:absolute;
-  top: 20.8em;
-  left: 3em;
-  width: 283px;
-  z-index:1;
- }
-.projectCurtain p {
-  height: 50px;
+  width: 283px;  
+  text-align: center;
+}
+.curtain p {
   position: relative;
-  top: 4.5em;
-  left: 4em;
-  text-align: left;
-  width: 245px;
+  margin: 5em auto 1em auto;
+  font-size: 1.2em;
+  text-align: center;
+  width: 225px;
  }
- .projectCurtain a {
+ .curtain a {
+  text-decoration: underline;
+  color: yellow;
   font-size: 1em;
   width: 116px;
  }
-.projectCurtain ul {
-  margin-top: 5em;
-  height: 100px;
-  width: 245px;
+ .curtain a:hover, .curtain a:visited {
+  color: yellow;
  }
-.projectCurtain li {
+.curtain ul {
+  height: 100px;
+  width: 235px;
+ }
+.curtain li {
   list-style-type: none;
   margin-left: 6em;
   text-align: left;

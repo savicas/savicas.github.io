@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+  </style>
+</head>
+<body>
+  <div id="map-canvas"/>
+</body>
+<script>
+
+var config = {
+  
+  // From https://code.google.com/apis/console > API Access > Simple API Access
+  googleApiKey: 'AIzaSyAL2KGVSYqKpQWuDZRaEBlows4hZveIfNI', 
+
+  bartApiKey: 'UBKK-JV9L-E2YU-MSZ4',
+
+  // Map
+  initialLatitude: 37.7833,
+  initialLongitude: -122.4167, // SF
+  mapInitialZoom: 13
+};
+
+
+/*
+From http://api.bart.gov/docs/stn/stns.aspx
+*/
+function parseStation(station) {
+  var obj = {
+    name: 'name',
+    abbr: 'abbr',
+    lat: 'gtfs_latitude',
+    lon: 'gtfs_longitude',
+    address: 'address',
+    city: 'city',
+    zipcode: 'zipcode'
+  }
+
+  for (attribute in obj) {
+    var xmlTag = obj[attribute];
+    obj[attribute] = $(station).find(xmlTag).text();
+  }
+  return obj;
+};
+
+function loadBartStations() {
+  var url = 'http://api.bart.gov/api/stn.aspx?cmd=stns&key=' + config.bartApiKey
+    , xmlLoaded = false
+    , stations = [];
+  $.ajax({
+    url: url,
+    method: 'GET',
+    async: false,
+    timeout: 3000,
+    datatype: 'html',
+    error: function (data) {
+      console.log("Error loading BART stations: " + data);
+    },
+    success: function(xml) {
+      var xml = $(xml);
+      stations = xml.find('station');
+      for (var i = 0; i < stations.length; i++) {
+        stations[i] = parseStation(stations[i]);
+      }
+    }
+  });
+  return stations;
+}
+
+function drawBartStations(map, stations) {
+  for (var i = 0; i < stations.length; i++) {
+    var station = stations[i];
+    new google.maps.Marker({
+      position: new google.maps.LatLng(station.lat, station.lon),
+      map: map,
+      title: station.name
+    });
+  }
+}
+
+function initBart(map) {
+  var stations = loadBartStations();
+  drawBartStations(map, stations);
+}
+
+function googleMapsReady() {
+  var mapOptions = {
+    // Minimum required options
+    zoom: config.mapInitialZoom,
+    center: new google.maps.LatLng(config.initialLatitude, config.initialLongitude),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map($('#map-canvas')[0], mapOptions);
+  initBart(map);
+}
+
+// Google Maps tutorial: https://developers.google.com/maps/documentation/javascript/tutorial
+function initGoogleMaps() {
+  // We create a <script> element that will load the Google Maps library and
+  //  call googleMapsReady when it's ready to use
+  var url = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=googleMapsReady&key=' + config.googleApiKey
+    , script = $('<script>').attr('type', 'text/javascript').attr('src', url);
+  script.prependTo('body');
+}
+
+$(document).ready(initGoogleMaps);
+
+</script>
+</html>
