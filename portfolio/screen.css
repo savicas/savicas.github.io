@@ -99,9 +99,9 @@ section img {
   color: #f2e5f2;
   font-family: 'Playfair Display', serif;
   font-size: .8rem;
-  width: 283px;  
+  width: 283px;
   text-align: center;
-}
+ }
 .curtain p {
   position: relative;
   margin: 5em auto 1em auto;
@@ -116,7 +116,7 @@ section img {
   width: 116px;
  }
  .curtain a:hover, .curtain a:visited {
-  color: yellow;
+  color: #e7e800;
  }
 .curtain ul {
   height: 100px;
@@ -205,10 +205,6 @@ h2, footer a{
     h1 span, #hireMe {
       font-size: 1.6rem;
     }
-/*    .projectCurtain {
-      top: 23.3em;
-      left: 10.3em;
-    }*/
 }
 
 

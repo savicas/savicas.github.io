@@ -9,7 +9,7 @@ $(document).ready( function() {
 			, position = img.position()  		// we want to position the curtain in the same position than the current image
 			, margin = img.css('margin')    // we get the margin of the image
 																			// and apply it as the margin of the curtain, so the image and the curtain occupy the same space
-		
+
 		curtain.css('left', position.left)
 		       .css('top', position.top)
 		       .css('margin', margin)
