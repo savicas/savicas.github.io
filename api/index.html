@@ -18,7 +18,6 @@ var config = {
 
   // From https://code.google.com/apis/console > API Access > Simple API Access
   googleApiKey: 'AIzaSyAORPTjEc_m4LRM_FWt-u9CFcZ0pjpcNa0',
-
   bartApiKey: 'UBKK-JV9L-E2YU-MSZ4',
 
   // Map
@@ -74,11 +73,16 @@ function loadBartStations() {
 
 function drawBartStations(map, stations) {
   for (var i = 0; i < stations.length; i++) {
-    var station = stations[i];
-    new google.maps.Marker({
+    var station = stations[i]
+      , marker = new google.maps.Marker({
       position: new google.maps.LatLng(station.lat, station.lon),
       map: map,
       title: station.name
+    });
+
+    // From https://developers.google.com/maps/documentation/javascript/events
+    google.maps.event.addListener(marker, 'click', function() {
+      alert(this.title);
     });
   }
 }
