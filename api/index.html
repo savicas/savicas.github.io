@@ -84,15 +84,20 @@ function loadBartStations() {
 function drawBartStations(map, stations) {
   for (var i = 0; i < stations.length; i++) {
     var station = stations[i]
+      , stationInfoHTML = '<h2>' + station.name + '</h2>' + 
+                          '<p>' + station.address + '<br>' + station.city + '</p>'
+      , info = new google.maps.InfoWindow({content: stationInfoHTML})
       , marker = new google.maps.Marker({
       position: new google.maps.LatLng(station.lat, station.lon),
       map: map,
-      title: station.name
+      title: station.name,
+      station: station,
+      info: info
     });
 
     // From https://developers.google.com/maps/documentation/javascript/events
     google.maps.event.addListener(marker, 'click', function() {
-      alert(this.title);
+      this.info.open(map, this);
     });
   }
 }
